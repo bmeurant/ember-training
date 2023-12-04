@@ -1,12 +1,10 @@
 # Site settings
 title: Baptiste Meurant
-email: baptiste@meurant.io
-author: Baptiste Meurant <baptiste@meurant.io>
+email: baptiste.meurant@gmail.com
+author: Baptiste Meurant <baptiste.meurant@gmail.com>
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://baptiste.meurant.io" # the base hostname & protocol for your site
-description: Software craftsman, Java & Javascript full stack developer, architect, open source enthousiast. #Java #Spring #Javascript #EmberJS
-twitter_username: bmeurant
-github_username:  bmeurant
+url: "https://baptiste.meurant.io/ember-training/" # the base hostname & protocol for your site
+description: Ember training
 
 # Build settings
 markdown: kramdown

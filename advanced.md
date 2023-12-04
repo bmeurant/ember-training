@@ -302,7 +302,7 @@ lors de l'appel dans la route nous pouvons appeler donc directement cette nouvel
       }
 ```
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/
 [ember-data]: https://guides.emberjs.com/v3.12.0/models/
 [ember-decorators]: https://github.com/ember-decorators/ember-decorators
 [ember-rfc]: https://github.com/emberjs/rfcs/

@@ -18,7 +18,7 @@ Il est donc nécessaire, en premier lieu, de copier ce ou ces fichiers de test d
 ## Composants
 
 Les composants [Ember][ember] constituent une part importante de la structure du framework.
-[Ember][ember] revendique en effet depuis toujours une approche composants ainsi que la volonté de converger vers les [Web components](http://w3c.github.io/webcomponents/) et les [Custom elements](http://w3c.github.io/webcomponents/spec/custom/) en particulier.
+[Ember][ember] revendique en effet depuis toujours une approche composants ainsi que la volonté de converger vers les [Web components](https://github.com/WICG/webcomponents) et les [Custom elements](https://github.com/WICG/webcomponents/tree/gh-pages/spec/custom) en particulier.
 
 [Ember][ember] permet ainsi de définir - sous la forme de composants - des éléments évolués offrant une réutilisation maximales à la fois de structures d'affichage et de structures 
 logiques au sein d'une application.

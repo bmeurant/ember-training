@@ -123,7 +123,7 @@ En revanche, il est peu configurable et cet exercice nous obligera à personnali
       Watching...
     ```
      
-1. Comme nous n'avons désormais plus besoin de [Ember Mirage](http://www.ember-cli-mirage.com/) pour le développement mais souhaitons le conserver pour les tests, on le désactive
+1. Comme nous n'avons désormais plus besoin de [Ember Mirage](https://www.ember-cli-mirage.com/) pour le développement mais souhaitons le conserver pour les tests, on le désactive
    dans le fichier ``config/environment.js`` :
    
    ```javascript
@@ -144,7 +144,7 @@ En revanche, il est peu configurable et cet exercice nous obligera à personnali
    };
    ```
    
-   NB : On aurait pu aussi utiliser la fonction [passthrough](https://www.ember-cli-mirage.com/docs/getting-started/overview#passthrough) d'[Ember Mirage](http://www.ember-cli-mirage.com/)    qui permet de laisser passer tout ou partie des requêtes mais on aurait dans ce cas continué à utiliser [Ember Mirage](http://www.ember-cli-mirage.com/) comme "passe plat", ce que l'on ne souhaite pas.
+   NB : On aurait pu aussi utiliser la fonction [passthrough](https://www.ember-cli-mirage.com/docs/getting-started/overview#passthrough) d'[Ember Mirage](https://www.ember-cli-mirage.com/)    qui permet de laisser passer tout ou partie des requêtes mais on aurait dans ce cas continué à utiliser [Ember Mirage](https://www.ember-cli-mirage.com/) comme "passe plat", ce que l'on ne souhaite pas.
    
   {% endcapture %}{{ m | markdownify }}
 </div>
@@ -519,9 +519,9 @@ Pour la liste complète des propriétés / méthodes des adapters, se référer 
   {% endcapture %}{{ m | markdownify }}
 </div>
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/
 [ember-data]: https://guides.emberjs.com/v3.12.0/models/
-[ember-mirage]: http://www.ember-cli-mirage.com/
+[ember-mirage]: https://www.ember-cli-mirage.com/
 [json-server]: https://github.com/typicode/json-server
 [ember-data-rest-adapter]: https://api.emberjs.com/ember-data/3.12/classes/RESTAdapter
 [ember-data-adapter]: https://api.emberjs.com/ember-data/3.12/classes/Adapter

@@ -2,7 +2,7 @@
 layout: ember-training
 title: Formation Ember - Principes généraux
 permalink:  overview/
-prev: 
+prev: index
 next: underlyings
 description: formation / tutoriel emberjs - Principes généraux & fondamentaux ember
 ---
