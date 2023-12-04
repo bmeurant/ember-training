@@ -1,0 +1,14 @@
+# Site settings
+title: Baptiste Meurant
+email: baptiste@meurant.io
+author: Baptiste Meurant <baptiste@meurant.io>
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://baptiste.meurant.io" # the base hostname & protocol for your site
+description: Software craftsman, Java & Javascript full stack developer, architect, open source enthousiast. #Java #Spring #Javascript #EmberJS
+twitter_username: bmeurant
+github_username:  bmeurant
+
+# Build settings
+markdown: kramdown
+exclude: [package.json, bower.json, node_modules, bower_components, Gemfile, Gemfile.lock, less, Gruntfile.js]
+permalink: /blog/:year/:month/:day/:title/

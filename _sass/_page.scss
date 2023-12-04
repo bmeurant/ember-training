@@ -1,0 +1,213 @@
+.hide-answers blockquote {
+    display: none;
+}
+
+.work {
+    border: solid #0388a6;
+    border-radius: 6px;
+    background-color: #FDFDFC;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+    .title {
+        color: #0388a6;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 15px;
+        margin-top: 5px;
+
+        &:before {
+            content: "";
+            display: block;
+            background: url('/images/write-blue.png') no-repeat;
+            width: 50px;
+            height: 50px;
+            float: left;
+            background-size: 40px;
+            background-position-y: 50%;
+        }
+    }
+
+    .toggle-answers {
+        float: right;
+        margin-right: 10px;
+    }
+}
+
+.page-content {
+    padding-top: 30px;
+
+    @include grid-row();
+
+    a {
+        font-weight: 400;
+    }
+
+    .page-main {
+        @include grid-column(12);
+    }
+
+    .page-menu {
+        @include grid-column(12);
+    }
+
+    p, ol, ul {
+        font-weight: 300;
+    }
+
+    ul li ul,
+    ul li ol,
+    ol li ul,
+    ol li ul {
+        margin-bottom: 15px !important;
+    }
+}
+
+div#toc {
+    font-weight: 700;
+    background-color: #FDFDFC;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 2px solid #0388a6;
+
+    ol {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+}
+
+.page-header {
+    @include grid-row;
+
+    .page-title {
+        @include grid-column(9);
+
+        border-bottom: 3px solid;
+        padding-bottom: 10px;
+    }
+
+    .page-actions {
+        @include grid-column(9);
+
+        text-align: right;
+    }
+}
+
+.toggle-answers {
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    font-weight: 700;
+    box-shadow: 0 1px 3px #007095, inset 0 0 0 #999;
+
+    &.active {
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+        background-color: $brand-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.site-footer {
+ font-size: 12px;
+}
+
+@media #{$medium-up} {
+    .page-content {
+        .page-main {
+            @include grid-column(9);
+        }
+
+        .page-menu {
+            @include grid-column(3);
+        }
+    }
+}
+
+.page-menu {
+    h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 5px;
+        color: $dark-gray;
+
+        a {
+            color: $dark-gray !important;
+        }
+    }
+
+    ol, ul {
+        padding-bottom: 10px;
+    }
+
+    ol > li, ul > li {
+        font-size: 16px;
+        padding-left: 5px;
+
+        &.active {
+            background-color: #5D5C59;
+            border-radius: 5px;
+
+            a {
+                color: $light-gray;
+            }
+        }
+    }
+}
+
+.section-nav {
+    @include grid-row();
+    margin-top: 50px;
+
+    .button {
+        text-shadow: 0 -1px 0 $grey-color-dark;
+
+        &.prev, &.next {
+            padding: 15px;
+        }
+
+        &.prev .fa {
+            padding-right: 5px;
+        }
+
+        &.next .fa {
+            padding-left: 5px;
+        }
+    }
+}
+
+.button {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &.disabled, &.disabled:hover {
+        background-color: $grey-color;
+    }
+}
+
+blockquote code {
+    font-style: normal;
+}
+
+#toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
