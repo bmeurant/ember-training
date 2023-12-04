@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Templates, les bases
-permalink:  ember/training/templates/
-prev: ember/training/ember-cli
-next: ember/training/routing
+permalink:  templates/
+prev: ember-cli
+next: routing
 ---
 
 <div id="toc"></div>

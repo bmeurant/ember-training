@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Routing
-permalink: ember/training/routing/
-prev: ember/training/templates
-next: ember/training/actions-controllers
+permalink: routing/
+prev: templates
+next: actions-controllers
 ---
 
 <div id="toc"></div>

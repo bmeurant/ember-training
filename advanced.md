@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Notions avancées
-permalink:  ember/training/advanced/
-prev: ember/training/ember-data
-next: ember/training/backend
+permalink:  advanced/
+prev: ember-data
+next: backend
 ---
 
 <div id="toc"></div>

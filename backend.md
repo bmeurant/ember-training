@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Backend
-permalink:  ember/training/backend/
-prev: ember/training/advanced
-next: ember/training/testing
+permalink:  backend/
+prev: advanced
+next: testing
 ---
 
 <div id="toc"></div>

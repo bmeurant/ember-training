@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Principes généraux
-permalink:  ember/training/overview/
-prev: ember/training/
-next: ember/training/underlyings
+permalink:  overview/
+prev: 
+next: underlyings
 description: formation / tutoriel emberjs - Principes généraux & fondamentaux ember
 ---
 

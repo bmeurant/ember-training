@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Composants
-permalink:  ember/training/components/
-prev: ember/training/actions-controllers
-next: ember/training/ember-data
+permalink:  components/
+prev: actions-controllers
+next: ember-data
 ---
 
 <div id="toc"></div>

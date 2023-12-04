@@ -1,9 +1,9 @@
 ---
 layout: ember-training
 title: Formation Ember - Actions & Contrôleurs
-permalink:  ember/training/actions-controllers/
-prev: ember/training/routing
-next: ember/training/components
+permalink:  actions-controllers/
+prev: routing
+next: components
 ---
 
 <div id="toc"></div>
