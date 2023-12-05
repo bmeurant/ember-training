@@ -16,3 +16,11 @@ sass:
     - _sass
     - bower_components/foundation/scss
   style: compressed
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Rakefile
