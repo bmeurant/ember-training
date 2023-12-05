@@ -3,7 +3,7 @@ title: Baptiste Meurant
 email: baptiste.meurant@gmail.com
 author: Baptiste Meurant <baptiste.meurant@gmail.com>
 baseurl: "/ember-training" # the subpath of your site, e.g. /blog/
-url: "https://baptiste.meurant.io" # the base hostname & protocol for your site
+url: "https://bmeurant.github.io" # the base hostname & protocol for your site
 description: Ember training
 
 # Build settings
