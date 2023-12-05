@@ -29,9 +29,9 @@ Pour cela, il faut en premier lieu disposer de l'objet [Ember][ember] lui-même.
      <head>
        <meta charset="utf-8">
        <title>Ember Object model</title>
-       <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-       <script src="http://builds.emberjs.com/release/ember.debug.js"></script>
-       <script src="http://builds.emberjs.com/release/ember-template-compiler.js"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <script src="https://builds.emberjs.com/release/ember.debug.js"></script>
+       <script src="https://builds.emberjs.com/release/ember-template-compiler.js"></script>
      </head>
      <body>
 
@@ -97,7 +97,7 @@ On souhaite désormais initialiser l'objet à sa création avec un titre et affi
 <div class="work">
     {% capture m %}
 
-1. Modifier la classe `Book` en conséquence et créer l'objet via la méthode [create()](http://emberjs.com/api/classes/Ember.Object.html#method_create) d'[Ember](http://emberjs.com) en initialisant un champs `title`.
+1. Modifier la classe `Book` en conséquence et créer l'objet via la méthode [create()](https://emberjs.com/api/classes/Ember.Object.html#method_create) d'[Ember](https://emberjs.com) en initialisant un champs `title`.
 
    > ```javascript
    > > Book = Ember.Object.extend({
@@ -110,8 +110,8 @@ On souhaite désormais initialiser l'objet à sa création avec un titre et affi
    > > one.logTitle();
    > ```
    
-   L'utilisation de la méthode [create()](http://emberjs.com/api/classes/Ember.Object.html#method_create) en lieu et place d'un simple `new` permet l'initialisation de propriétés via un objet passé en paramètre.
-   La méthode `create` permet également d'effectuer des opérations d'initialisations complémentaires via l'appel de la méthode [init()](http://emberjs.com/api/classes/Ember.Object.html#method_init).
+   L'utilisation de la méthode [create()](https://emberjs.com/api/classes/Ember.Object.html#method_create) en lieu et place d'un simple `new` permet l'initialisation de propriétés via un objet passé en paramètre.
+   La méthode `create` permet également d'effectuer des opérations d'initialisations complémentaires via l'appel de la méthode [init()](https://emberjs.com/api/classes/Ember.Object.html#method_init).
 
 1. Ajouter une méthode d'initialisation qui réalise un simple log console du titre passé au create.
    Le résultat doit être le suivant :
@@ -219,7 +219,7 @@ Les méthodes de la classe mère peuvent être accédées via l'appel de la mét
 
    L'appel à la méthode mère doit donc être explicite.
    Lorsque vous héritez d'un objet Ember (``Controller``, ``Route``, etc.) et que vous surchargez la méthode ``init`` dans votre implémentation, soyez sûr de bien appeler la méthode ``_super`` au tout début de l'init.
-   Dans le cas contraire, les traitements d'initialisation standard prévus par [Ember](http://emberjs.com) ne pourraient pas s'exécuter correctement entraînant des comportements erratiques.
+   Dans le cas contraire, les traitements d'initialisation standard prévus par [Ember](https://emberjs.com) ne pourraient pas s'exécuter correctement entraînant des comportements erratiques.
 
   {% endcapture %}{{ m | markdownify }}
 </div>
@@ -797,11 +797,11 @@ Ils sont en particulier très utiles lorsque l'on souhaite déclencher un traite
 
 ### API Collections (``Enumerables``)
 
-Ember gère ses collections et énumérations (et nous propose de gérer les nôtres) au travers d'objets [Ember.Enumerable](http://emberjs.com/api/classes/Ember.Enumerable.html).
+Ember gère ses collections et énumérations (et nous propose de gérer les nôtres) au travers d'objets [Ember.Enumerable](https://emberjs.com/api/classes/Ember.Enumerable.html).
 Cette API s'appuie sur les opérations de l'API javascript standard (``array``).
 Cette API permet de gérer toutes les collections d'objets via une interface normalisée et commune et nous permet donc d'utiliser et de proposer des structures de données complètement nouvelles sans impact sur le reste de notre application.
 
-Cette API est décrite de manière succinte [ici](https://guides.emberjs.com/v3.12.0/object-model/enumerables/) et exhaustive [ici](http://emberjs.com/api/classes/Ember.Enumerable.html).
+Cette API est décrite de manière succinte [ici](https://guides.emberjs.com/v3.12.0/object-model/enumerables/) et exhaustive [ici](https://emberjs.com/api/classes/Ember.Enumerable.html).
 
 
 ## *RunLoop*
@@ -809,7 +809,7 @@ Cette API est décrite de manière succinte [ici](https://guides.emberjs.com/v3.
 Un autre mécanisme extrêmement important est impliqué tant dans l'optimisation du moteur de rendu que dans le calcul et la synchronisation des propriétés entre elles : la *RunLoop*.
 Ce mécanisme est absolument central dans le fonctionnement d'[Ember][ember] et s'appuie sur la micro librairie [Backburner](https://github.com/ebryn/backburner.js/).
 Dans la plupart des cas, on n'a pas à s'en préoccuper et on peut parfaitement mettre en place une application [Ember][ember] complète sans interagir directement avec la *RunLoop*.
-Il est cependant parfois nécessaire, lorsqu'on ajoute nos propres `helpers` [Handlebars](http://handlebarsjs.com/) ou nos propres composants avancés.
+Il est cependant parfois nécessaire, lorsqu'on ajoute nos propres `helpers` [Handlebars](https://handlebarsjs.com/) ou nos propres composants avancés.
 C'est de toutes façons essentiel d'en comprendre le fonctionnement.
 
 Comme son nom ne l'indique pas, la *RunLoop* n'est pas une loop mais un ensemble de queues permettant à [Ember][ember] de différer et d'organiser un certain nombre d'opérations
@@ -854,6 +854,6 @@ Sans la *RunLoop*, on exécuterait le rendu deux fois si l'on modifie successive
 La *RunLoop* met tout ça (et plein d'autres choses) en queue et n'effectue le rendu qu'une seule et unique fois, lorsque nécessaire.
 
 our aller plus loin, se référer à la [documentation officielle](https://guides.emberjs.com/v3.12.0/applications/run-loop/) et à cette 
-[présentation d'Eric Bryn](http://talks.erikbryn.com/backburner.js-and-the-ember-run-loop).
+[présentation d'Eric Bryn](https://talks.erikbryn.com/backburner.js-and-the-ember-run-loop).
 
-[ember]: http://emberjs.com
+[ember]: https://emberjs.com

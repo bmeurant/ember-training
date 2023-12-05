@@ -5,10 +5,10 @@ permalink:  /
 next: overview
 ---
 
-Cette formation en français a pour objectif d'introduire les **principes**, la **philosophie** ainsi que le **fonctionnement** du framework [Ember](http://emberjs.com).
+Cette formation en français a pour objectif d'introduire les **principes**, la **philosophie** ainsi que le **fonctionnement** du framework [Ember](https://emberjs.com).
 
 <p class="text-center">
-    <img src="/images/emberjs.png" alt="EmberJS"/>
+    <img src="{{ '/images/emberjs.png' | prepend: site.baseurl | prepend: site.url }}" alt="EmberJS"/>
 </p>
 
 Elle peut s'appréhender comme une **suite de travaux dirigés**.
@@ -30,5 +30,5 @@ C'est particulièrement le cas des premiers chapitres.
 Ce support sert pour le déroulement de **formations présentielles** et certains aspects théoriques mais aussi certains exercices pratiques sont, d'un point de vue pédagogique, plus efficaces s'ils sont accompagnés par des explications du formateur.
 Néanmoins, à chaque fois que cela est possible, **ce support est auto suffisant**.
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/
 

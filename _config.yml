@@ -2,7 +2,7 @@
 title: Baptiste Meurant
 email: baptiste.meurant@gmail.com
 author: Baptiste Meurant <baptiste.meurant@gmail.com>
-baseurl: "/ember-training/" # the subpath of your site, e.g. /blog/
+baseurl: "/ember-training" # the subpath of your site, e.g. /blog/
 url: "https://baptiste.meurant.io" # the base hostname & protocol for your site
 description: Ember training
 
@@ -10,3 +10,9 @@ description: Ember training
 markdown: kramdown
 exclude: [package.json, bower.json, node_modules, bower_components, Gemfile, Gemfile.lock, less, Gruntfile.js]
 permalink: /blog/:year/:month/:day/:title/
+
+sass:
+  load_paths:
+    - _sass
+    - bower_components/foundation/scss
+  style: compressed

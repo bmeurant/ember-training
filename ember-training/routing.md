@@ -56,7 +56,7 @@ Nous avons d'ailleurs pu constater que la route ``application`` (``/``) existait
 
 On souhaite désormais créer une nouvelle route pour l'affichage et la manipulation de notre liste de ``comics``
 
-1. Utiliser le *scaffolding* d'[Ember CLI](http://www.ember-cli.com/) pour déclarer une nouvelle route dans le routeur de notre application.
+1. Utiliser le *scaffolding* d'[Ember CLI](https://www.ember-cli.com/) pour déclarer une nouvelle route dans le routeur de notre application.
 
    ```console
    $ ember generate route comics
@@ -440,7 +440,7 @@ Par convention, les éléments constitutifs des routes filles (template, route, 
   {% raw %}
 
 1. Créer une route ``comic``, fille de la route ``comics``.
-    * Utiliser la ligne de commande [Ember CLI](http://ember-cli.com) ``ember generate route comics/comic`` pour générer la route
+    * Utiliser la ligne de commande [Ember CLI](https://ember-cli.com) ``ember generate route comics/comic`` pour générer la route
     * La nouvelle route doit afficher un texte *"Comic selected !"* dans une div de classe ``comic`` à droite de la liste de comics
     * Ne pas oublier l' ``{{outlet}}`` dans la route mère
 
@@ -490,7 +490,7 @@ Par convention, les éléments constitutifs des routes filles (template, route, 
     On note la création du test unitaire ``tests/unit/routes/comics/comic-test.js`` et notamment l'arborescence dans laquelle il a été créé.
 
     On note également que l'objet route ``app/routes/comics/comic.js`` est totalement vide puisque nous n'avons aucune logique particulière à y implémenter.
-    En effet, grâce aux conventions de nommage d'[Ember](http://emberjs.com/) et aux capacités de **génération d'objets** d'[Ember](http://emberjs.com/) évoquées dans le chapitre [Overview - Génération d'objets](../overview/#génération-d'objets), le framework génère pour nous dynamiquement les objets de base nécessaires à l'éxécution d'une route.
+    En effet, grâce aux conventions de nommage d'[Ember](https://emberjs.com/) et aux capacités de **génération d'objets** d'[Ember](https://emberjs.com/) évoquées dans le chapitre [Overview - Génération d'objets](../overview/#génération-d'objets), le framework génère pour nous dynamiquement les objets de base nécessaires à l'éxécution d'une route.
     Il nous suffit ensuite de surcharger / compléter ces objet pour en fournir notre propre implémentation.
     En l'occurence, la logique de l'objet route pour `comics.comic` a été héritée.
 
@@ -660,7 +660,7 @@ place du texte précédent.
 
 {% raw %}
 
-[Ember][ember] propose un *helper* [link-to](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) qui permet de générer un lien vers une route de notre application.
+[Ember][ember] propose un *helper* [link-to](https://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) qui permet de générer un lien vers une route de notre application.
 L'utilisation de ce *helper* permet la génération et la gestion de liens internes à l'application.
 
 Un certain nombre de comportements sont apportés par l'utilisation de ce *helper* :
@@ -864,7 +864,7 @@ Mais la route ``application`` n'est pas la seule route implicite gérée par [Em
 D'autres routes implicites encore sont créées comme le montre la capture ci-dessous pour notre application :
 
 <p class="text-center">
-    <img src="/images/implicit-routes.png" alt="Routes implicites"/>
+    <img src="{{site.baseurl}}/images/implicit-routes.png" alt="Routes implicites"/>
 </p>
 
 En noir apparaissent les routes déclarées explicitement (à l'exception près de la route ``application`` qui apparait en noir alors qu'elle est implicitement créée par [Ember][ember]).
@@ -896,7 +896,7 @@ On constate que plusieurs types de routes sont implicitement créées lors de la
 
     En réalité, la bonne solution se trouve souvent dans un mix des deux avec la fourniture dun traitement général au niveau application spécialisé au besoin au niveau des routes mères.
 
-On note enfin que, grâce aux capacités de **génération d'objets** d'[Ember](http://emberjs.com/) déjà évoquées dans le chapitre [Overview - Génération d'objets](../overview/#génération-d'objets),
+On note enfin que, grâce aux capacités de **génération d'objets** d'[Ember](https://emberjs.com/) déjà évoquées dans le chapitre [Overview - Génération d'objets](../overview/#génération-d'objets),
 les routes n'ont pas été les seuls objets à avoir été implicitement créés.
 En effet, on remarque que les contrôleurs et templates associés ont été également créés.
 Ils proposent une implémentation par défaut vide, bien entendu.
@@ -909,7 +909,7 @@ Ils proposent une implémentation par défaut vide, bien entendu.
 ``no-selected-comic`` ne s'affiche que lorsque aucun comic n'est selectionné.
    C'est à dire pour l'URL ``/comics`` (sans rien derrière.)
 
-    On note que l'on n'a pas besoin de définir l'objet route ``app/routes/comics/index.js`` parce que celle-ci est implicitement créée vide par [Ember](http://emberjs.com).
+    On note que l'on n'a pas besoin de définir l'objet route ``app/routes/comics/index.js`` parce que celle-ci est implicitement créée vide par [Ember](https://emberjs.com).
 
     > ```html
     > {{!-- app/templates/comics.hbs --}}
@@ -1560,6 +1560,6 @@ On a pu également constater à quel point les conventions tenaient une place im
 Il est important également de se rappeler que la très grande majorité de ces conventions peuvent être adaptées et personalisées à l'aide de configuration et de points d'extension.
 
 
-[handlebars]: http://handlebarsjs.com/
-[ember-cli]: http://www.ember-cli.com/
-[ember]: http://emberjs.com/
+[handlebars]: https://handlebarsjs.com/
+[ember-cli]: https://www.ember-cli.com/
+[ember]: https://emberjs.com/

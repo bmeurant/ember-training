@@ -48,7 +48,7 @@ L'application va interagir principalement avec trois types d'objets principaux :
    Ceux-ci réalisent les transformations (sérialisations, désérialisations, apis, etc.) nécessaires pour communiquer avec le serveur dans son format spécifique.
    Cette approche permet à une application de communiquer avec n'importe quel serveur dans n'importe quel format via la manipulation exclusive du **store**.
    Des adapters spécifiques réaliseront les transformations nécessaires sans aucun impact sur l'application elle-même.
-   L'adapter par défaut s'appuie sur le format défini par [JSON API](http://jsonapi.org/).
+   L'adapter par défaut s'appuie sur le format défini par [JSON API](https://jsonapi.org/).
 
 Les deux schémas ci-dessous illustrent les principes de fonctionnement exprimés plus haut s'agissant des requêtes et réponses entre une application et un serveur.
 
@@ -411,7 +411,7 @@ C'est à l'heure actuelle, l'outil de référence dans la communauté [Ember][em
 ### Ember CLI Mirage addon
 
 La modularité d'[Ember][ember] ainsi que son approche composants a permis et encouragé l'emmergence d'**addons**.
-Les **addons** [Ember][ember] sont un mécanisme d'extension formalisé en même temps que le développement d'[Ember CLI](http://ember-cli.com/).
+Les **addons** [Ember][ember] sont un mécanisme d'extension formalisé en même temps que le développement d'[Ember CLI](https://ember-cli.com/).
 Ils sont un mécanisme d'extension puissant permettant d'ajouter à une application [Ember][ember] de multiples fonctionnalités via la mise à disposition de composants, mixins, services, etc.
 Un **addon** peut embarquer un simple composant comme un mécanisme d'authentification côté client complet.
 Le site [Ember addons](https://www.emberaddons.com) rencense l'ensemble des **addons** [Ember][ember] et permet des recherches avancées.
@@ -522,12 +522,12 @@ export default Model.extend({
   {% capture m %}
   {% raw %}
   
-1. Nous allons maintenant configurer un serveur [Ember CLI Mirage](http://www.ember-cli-mirage.com/) permettant d'exposer notre liste de comics sous forme de *fixtures* (puisque nos données sont complètes et ne nécessitent pas d'être générées dynamiquement).
-   * Installer [Ember CLI Mirage](http://www.ember-cli-mirage.com/)
-   * Créer la route [Ember CLI Mirage](http://www.ember-cli-mirage.com/) pour répondre à un GET ``/comics``
+1. Nous allons maintenant configurer un serveur [Ember CLI Mirage](https://www.ember-cli-mirage.com/) permettant d'exposer notre liste de comics sous forme de *fixtures* (puisque nos données sont complètes et ne nécessitent pas d'être générées dynamiquement).
+   * Installer [Ember CLI Mirage](https://www.ember-cli-mirage.com/)
+   * Créer la route [Ember CLI Mirage](https://www.ember-cli-mirage.com/) pour répondre à un GET ``/comics``
    * Ajouter les fixtures nécessaires et y déplacer la définition des comics
    * Créer le modèle mirage ``mirage/models/comic.js``
-   * Modifier le scénario par défaut d'[Ember CLI Mirage](http://www.ember-cli-mirage.com/) pour charger les fixtures
+   * Modifier le scénario par défaut d'[Ember CLI Mirage](https://www.ember-cli-mirage.com/) pour charger les fixtures
    * Dans la route ``comics``, supprimer la création des comics et changer le précédent ``peekAll`` en ``findAll``
    
    > ```console
@@ -631,7 +631,7 @@ export default Model.extend({
    > });
    > ```
    
-   * Modifier la route [Ember CLI Mirage](http://www.ember-cli-mirage.com/) ``comics`` et y copier l'implémentation suivante pour accepter le parametre ``slug`` 
+   * Modifier la route [Ember CLI Mirage](https://www.ember-cli-mirage.com/) ``comics`` et y copier l'implémentation suivante pour accepter le parametre ``slug`` 
      
      ```javascript
      import Mirage from 'ember-cli-mirage';
@@ -655,12 +655,12 @@ export default Model.extend({
      }
      ```
      
-   * Charger ensuite la route ``/comics/akira`` via un Ctrl-F5 pour constater dans la console que la requête ``GET /comics?slug=akira`` a bien été exécutée et qu'[Ember CLI Mirage](http://www.ember-cli-mirage.com/) y a répondu correctement
+   * Charger ensuite la route ``/comics/akira`` via un Ctrl-F5 pour constater dans la console que la requête ``GET /comics?slug=akira`` a bien été exécutée et qu'[Ember CLI Mirage](https://www.ember-cli-mirage.com/) y a répondu correctement
    * Pourquoi cette requête n'est-elle pas effectuée lorsque l'on vient de la route ``/comics`` ?
    
    > Lorsque l'on vient de la route ``/comics``, le model complet est passé à la route ``/comics/{slug}`` via le ``linkTo``.
-   > Dans ce cas [Ember](http://emberjs.com/) n'exécute pas le hook ``model``puisqu'il en dispose déjà.
-   > Dans le cas d'un chargement initial, au contraire, le modèle n'est pas disponible et [Ember](http://emberjs.com/) exécute le hook, entraînant une requête de la part d'[Ember Data](https://guides.emberjs.com/v3.12.0/models/).
+   > Dans ce cas [Ember](https://emberjs.com/) n'exécute pas le hook ``model``puisqu'il en dispose déjà.
+   > Dans le cas d'un chargement initial, au contraire, le modèle n'est pas disponible et [Ember](https://emberjs.com/) exécute le hook, entraînant une requête de la part d'[Ember Data](https://guides.emberjs.com/v3.12.0/models/).
    
 3. Rétablir la gestion des erreurs
 
@@ -680,8 +680,8 @@ export default Model.extend({
    ```
    
    Cependant, cela réduirait la gestion des erreurs exclusivement à une gestion du statut 404.
-   En outre, la route [Ember CLI Mirage](http://www.ember-cli-mirage.com/) renvoie une erreur complète que l'on peut exploiter.
-   Pour cela, il suffit de s'appuyer simplement sur les mécanismes natifs de gestion d'erreurs d'[Ember](http://emberjs.com/).
+   En outre, la route [Ember CLI Mirage](https://www.ember-cli-mirage.com/) renvoie une erreur complète que l'on peut exploiter.
+   Pour cela, il suffit de s'appuyer simplement sur les mécanismes natifs de gestion d'erreurs d'[Ember](https://emberjs.com/).
    Toute erreur sera en effet propagée pour être ensuite affichée par le template approprié (en l'occurrence ``comics.error.hbs``).
    C'est également le cas des erreurs en provenance du serveur.
    Il suffit donc de modifier le template comme suit : 
@@ -917,7 +917,7 @@ La présence d'erreurs de validation dans la réponse du serveur aura alors pour
 La liste des erreurs pourra ensuite être accédée via la propriété [errors](https://api.emberjs.com/ember-data/3.12/classes/Model/properties/errors?anchor=errors) : ``user.get('errors')``.
 
 Il ne faut cependant pas confondre cette récupérations d'erreurs de validations côté serveur avec une gestion de la validation des modèles côté client (dans un formulaire, par exemple).
-[Ember Data][ember-data] ne fournit pas d'outillage à ce niveau là mais l'on peut se tourner vers l'addon [Ember CP Validations](http://offirgolan.github.io/ember-cp-validations/docs/modules/Home.html) qui en fournit une implémentation complète et de qualité, comprenant l'internationalisation.
+[Ember Data][ember-data] ne fournit pas d'outillage à ce niveau là mais l'on peut se tourner vers l'addon [Ember CP Validations](https://offirgolan.github.io/ember-cp-validations/docs/modules/Home.html) qui en fournit une implémentation complète et de qualité, comprenant l'internationalisation.
  
 {% endraw %}
 
@@ -1405,6 +1405,6 @@ Ces requêtes ne sont effectuées que lorsque l'on accède effectivement (progra
   {% endcapture %}{{ m | markdownify }}
 </div>
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/
 [ember-data]: https://guides.emberjs.com/v3.12.0/models/
-[ember-mirage]: http://www.ember-cli-mirage.com/
+[ember-mirage]: https://www.ember-cli-mirage.com/

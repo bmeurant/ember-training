@@ -58,7 +58,7 @@ Retenons pour le moment qu'il s'agit du template principal de l'application dans
     {% capture m %}
     {% raw %}
 
-1. Commençons simplement par modifier le titre de l'application par `"Comic books library"` et par faire quelques autres modifications destinées à intégrer le style [Bootstrap](http://getbootstrap.com/) :
+1. Commençons simplement par modifier le titre de l'application par `"Comic books library"` et par faire quelques autres modifications destinées à intégrer le style [Bootstrap](https://getbootstrap.com/) :
 
    ```html
    {{!-- /app/templates/application.hbs --}}
@@ -75,8 +75,8 @@ Retenons pour le moment qu'il s'agit du template principal de l'application dans
    </div>
    ```  
    
-   On constate que l'application est mise à jour et rechargée à la volée par [Ember CLI](http://www.ember-cli.com/) et à l'exécution préalable de la commande ``ember server``.
-   Via cette commande, en effet, l'application est lancée et, lors de toute modification d'un fichier source, [Ember CLI](http://www.ember-cli.com/) se charge d'exécuter l'*asset pipeline* et de recharger l'application.
+   On constate que l'application est mise à jour et rechargée à la volée par [Ember CLI](https://www.ember-cli.com/) et à l'exécution préalable de la commande ``ember server``.
+   Via cette commande, en effet, l'application est lancée et, lors de toute modification d'un fichier source, [Ember CLI](https://www.ember-cli.com/) se charge d'exécuter l'*asset pipeline* et de recharger l'application.
   
   {% endraw %}
    
@@ -97,7 +97,7 @@ L'intérêt consiste à injecter dans ce template des valeurs et expressions dyn
    Cette opération s'effectue en renvoyant un ``model`` au sein d'une ``Route`` de la manière suivante.
    On expliquera ces notions en détail dans le chapitre [routing](../routing), admettons pour le moment que nous avons un fichier ``app/routes/application.js`` :
 
-   (On note l'utilisation des modules Ecmascript 6 rendue possible par la transpilation par [Ember CLI](http://www.ember-cli.com/).
+   (On note l'utilisation des modules Ecmascript 6 rendue possible par la transpilation par [Ember CLI](https://www.ember-cli.com/).
    cf. [chapitre précédent](../ember-cli))
     
    ```javascript
@@ -175,7 +175,7 @@ L'intérêt consiste à injecter dans ce template des valeurs et expressions dyn
 
 Le *binding*, via la notation ``{{}}`` peut s'effectuer au sein d'un élément HTML mais il peut également être nécessaire de dynamiser le contenu des attributs eux-mêmes : noms de classes, url source d'une image ou d'un lien, etc.
 
-Depuis la [version 1.11](http://emberjs.com/deprecations/v1.x/#toc_bind-attr), la syntaxe pour le *binding* d'attributs est similaire à celle utilisée pour le *binding* d'éléments :
+Depuis la [version 1.11](https://emberjs.com/deprecations/v1.x/#toc_bind-attr), la syntaxe pour le *binding* d'attributs est similaire à celle utilisée pour le *binding* d'éléments :
  
 ```html
 <div title={{comic.title}} class="comic {{if comic.scriptwriter 'with-scriptwriter' 'no-scriptwriter'}}"></div>
@@ -302,8 +302,8 @@ On retiendra les *helpers* [Ember][ember] principaux :
 
 La liste complète des *helpers* [Ember][ember] est accessible dans la [documentation](https://guides.emberjs.com/v3.12.0/templates/built-in-helpers/).
 
-[Ember][ember] et [Handlebars][handlebars] facilitent enfin la création et la contribution de nouveaux *helpers* via la fonction ``registerHelper`` d'[Handlebars](http://handlebarsjs.com/#helpers), la commande ``ember generate helper helper-name`` ou la contribution directe dans le dossier ``app/helpers``.
-cf [Ember documentation](https://guides.emberjs.com/v3.12.0/templates/writing-helpers/) & [Ember CLI documentation](http://www.ember-cli.com/user-guide/#resolving-handlebars-helpers) sur le sujet (attention au `-` obligatoire dans le nom pour [Ember CLI][ember-cli]).
+[Ember][ember] et [Handlebars][handlebars] facilitent enfin la création et la contribution de nouveaux *helpers* via la fonction ``registerHelper`` d'[Handlebars](https://handlebarsjs.com/#helpers), la commande ``ember generate helper helper-name`` ou la contribution directe dans le dossier ``app/helpers``.
+cf [Ember documentation](https://guides.emberjs.com/v3.12.0/templates/writing-helpers/) & [Ember CLI documentation](https://www.ember-cli.com/user-guide/#resolving-handlebars-helpers) sur le sujet (attention au `-` obligatoire dans le nom pour [Ember CLI][ember-cli]).
 
 {% endraw %}
 
@@ -344,7 +344,7 @@ cf [Ember documentation](https://guides.emberjs.com/v3.12.0/templates/writing-he
         
 1. Via la console, accéder à l'objet `comics` et ajouter un élément à la liste.
     * Utiliser d'abord la méthode `push` native des arrays javascript : [push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) 
-    * Puis la méthode `pushObject` d' [Ember](http://emberjs.com) : [pushObject](http://emberjs.com/api/classes/Ember.MutableArray.html#method_pushObject)
+    * Puis la méthode `pushObject` d' [Ember](https://emberjs.com) : [pushObject](https://emberjs.com/api/classes/Ember.MutableArray.html#method_pushObject)
      
     Que constate-t-on ?
     
@@ -363,12 +363,12 @@ cf [Ember documentation](https://guides.emberjs.com/v3.12.0/templates/writing-he
     > ```
     > 
     > * Dans le premier cas, en utilisant la méthode native `push`, le template n'a pas été mis à jour alors que l'objet a bien été ajouté (on a maintenant 3 éléments).
-    > * Dans le second cas, en utilisant la méthode [Ember](http://emberjs.com) `pushObject`, le template a été correctement mis à jour avec le nouvel objet.
+    > * Dans le second cas, en utilisant la méthode [Ember](https://emberjs.com) `pushObject`, le template a été correctement mis à jour avec le nouvel objet.
     >   On constate d'ailleurs que l'élément ajouté précédemment apparaît également.
     >   
-    > Cela s'explique par le fait que la méthode `pushObject` proposée par [Ember](http://emberjs.com) génère des évènements permettant de connaitre et de réagir aux changements.
+    > Cela s'explique par le fait que la méthode `pushObject` proposée par [Ember](https://emberjs.com) génère des évènements permettant de connaitre et de réagir aux changements.
     > On dit qu'elle est compatible *KVO* - *Key-Value Observing*).
-    > Cette méthode est mise à disposition par [Ember](http://emberjs.com) alors même que nous utilisons un objet `array` natif et non pas un objet [Ember](http://emberjs.com) parce que ce dernier enrichit le prototype de certains objets de manière transparente (note : ce comportement peut être désactivé).
+    > Cette méthode est mise à disposition par [Ember](https://emberjs.com) alors même que nous utilisons un objet `array` natif et non pas un objet [Ember](https://emberjs.com) parce que ce dernier enrichit le prototype de certains objets de manière transparente (note : ce comportement peut être désactivé).
     > cf. [documentation](https://guides.emberjs.com/v3.12.0/configuring-ember/disabling-prototype-extensions/)
 
 1. Modifier l'application pour afficher les auteurs des comics.
@@ -472,6 +472,6 @@ Au travers d'un exemple simple, nous avons pu nous familiariser également avec 
 Au fil des expérimentations à venir dans les sections suivantes, nous poursuivrons cette découverte au travers d'exemples concrets et de mises en pratique.
 Des outils et *helpers* fondamentaux d'[Ember][ember] tels que ``link-to``, ``action``, ``input`` ou encore ``textarea`` n'ont pas été abordés ici et seront largement détaillés par la suite.
  
-[handlebars]: http://handlebarsjs.com/
-[ember-cli]: http://www.ember-cli.com/
-[ember]: http://emberjs.com/
+[handlebars]: https://handlebarsjs.com/
+[ember-cli]: https://www.ember-cli.com/
+[ember]: https://emberjs.com/

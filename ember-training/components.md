@@ -42,7 +42,7 @@ implémentant une logique propre complexe).
 
 ### Nommage
 
-Conformément à la [spécification W3C](http://w3c.github.io/webcomponents/spec/custom/), le nom d'un composant (et donc le nom des fichiers ``.js`` et ``.hbs`` associés doit impérativement comporter un tiret ``-``.
+Conformément à la [spécification W3C](https://github.com/WICG/webcomponents/tree/gh-pages/spec/custom), le nom d'un composant (et donc le nom des fichiers ``.js`` et ``.hbs`` associés doit impérativement comporter un tiret ``-``.
 Dans le cas contraire, le composant ne sera pas détécté par [Ember][ember].
 
 Ainsi ``my-component`` est valide, ``myComponent`` ou ``mycomponent`` ne le sont pas.
@@ -902,4 +902,4 @@ Les plus fréquents sont ``didInsertElement``, ``willDestroyElement`` et moins f
 </div>
 
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/

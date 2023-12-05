@@ -1,17 +1,17 @@
 <h4><a href="/">Formation</a></h4>
     <ol>
-        <li class="{% if page.url == '/' %}active{% endif %}"><a href="/">Introduction</a></li>
-        <li class="{% if page.url contains 'overview/' %}active{% endif %}"><a href="/overview">Overview</a></li>
-        <li class="{% if page.url contains 'underlyings/' %}active{% endif %}"><a href="/underlyings">Mécanismes sous-jacents</a></li>
-        <li class="{% if page.url contains 'ember-cli/' %}active{% endif %}"><a href="/ember-cli">Ember CLI</a></li>
-        <li class="{% if page.url contains 'templates/' %}active{% endif %}"><a href="/templates">Templates, les bases</a></li>
-        <li class="{% if page.url contains 'routing/' %}active{% endif %}"><a href="/routing">Routing</a></li>
-        <li class="{% if page.url contains 'actions-controllers/' %}active{% endif %}"><a href="/actions-controllers">Actions & Contrôleurs</a></li>
-        <li class="{% if page.url contains 'components/' %}active{% endif %}"><a href="/components">Composants</a></li>
-        <li class="{% if page.url contains 'ember-data/' %}active{% endif %}"><a href="/ember-data">Ember Data</a></li>
-        <li class="{% if page.url contains 'advanced/' %}active{% endif %}"><a href="/advanced">Notions avancées</a></li>
-        <li class="{% if page.url contains 'backend/' %}active{% endif %}"><a href="/backend">Connexion à un backend</a></li>
-        <li class="{% if page.url contains 'testing/' %}active{% endif %}"><a href="/testing">Tests</a></li>
+        <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">Introduction</a></li>
+        <li class="{% if page.url contains 'overview/' %}active{% endif %}"><a href="{{ '/overview' | prepend: site.baseurl | prepend: site.url }}">Overview</a></li>
+        <li class="{% if page.url contains 'underlyings/' %}active{% endif %}"><a href="{{ '/underlyings' | prepend: site.baseurl | prepend: site.url }}">Mécanismes sous-jacents</a></li>
+        <li class="{% if page.url contains 'ember-cli/' %}active{% endif %}"><a href="{{ '/ember-cli' | prepend: site.baseurl | prepend: site.url }}">Ember CLI</a></li>
+        <li class="{% if page.url contains 'templates/' %}active{% endif %}"><a href="{{ '/templates' | prepend: site.baseurl | prepend: site.url }}">Templates, les bases</a></li>
+        <li class="{% if page.url contains 'routing/' %}active{% endif %}"><a href="{{ '/routing' | prepend: site.baseurl | prepend: site.url }}">Routing</a></li>
+        <li class="{% if page.url contains 'actions-controllers/' %}active{% endif %}"><a href="{{ '/actions-controllers' | prepend: site.baseurl | prepend: site.url }}">Actions & Contrôleurs</a></li>
+        <li class="{% if page.url contains 'components/' %}active{% endif %}"><a href="{{ '/components' | prepend: site.baseurl | prepend: site.url }}">Composants</a></li>
+        <li class="{% if page.url contains 'ember-data/' %}active{% endif %}"><a href="{{ '/ember-data' | prepend: site.baseurl | prepend: site.url }}">Ember Data</a></li>
+        <li class="{% if page.url contains 'advanced/' %}active{% endif %}"><a href="{{ '/advanced' | prepend: site.baseurl | prepend: site.url }}">Notions avancées</a></li>
+        <li class="{% if page.url contains 'backend/' %}active{% endif %}"><a href="{{ '/backend' | prepend: site.baseurl | prepend: site.url }}">Connexion à un backend</a></li>
+        <li class="{% if page.url contains 'testing/' %}active{% endif %}"><a href="{{ '/testing' | prepend: site.baseurl | prepend: site.url }}">Tests</a></li>
     </ol>
 <h4>Sources & Application</h4>
 <ul>
@@ -21,10 +21,10 @@
 </ul>
 <h4>Liens utiles</h4>
 <ul>
-    <li><a href="http://emberjs.com/">Documentation officielle</a></li>
-    <li><a href="http://emberjs.com/api/">APIs</a></li>
-    <li><a href="http://www.ember-cli.com/">Ember CLI</a></li>
-    <li><a href="http://www.emberaddons.com/">Ember addons</a></li>
-    <li><a href="http://discuss.emberjs.com/">Ember Forums</a></li>
+    <li><a href="https://emberjs.com/">Documentation officielle</a></li>
+    <li><a href="https://emberjs.com/api/">APIs</a></li>
+    <li><a href="https://www.ember-cli.com/">Ember CLI</a></li>
+    <li><a href="https://www.emberaddons.com/">Ember addons</a></li>
+    <li><a href="https://discuss.emberjs.com/">Ember Forums</a></li>
     <li><a href="https://github.com/emberjs">Ember Github repositories</a></li>
 </ul>

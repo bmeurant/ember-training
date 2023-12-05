@@ -12,7 +12,7 @@ En règle générale, les tests et la testabilité d'une application constitunte
 Les aspects dynamiques des applications web, la nature asycnhrone des évènements, les opérations de rendu, la *Run Loop*, etc. peuvent parfois poser certaines difficulté dans la construction de tests fiables.
 
 Pour ces raisons, [Ember][ember] embarque un certain nombre d'outils permettant d'aider à la construction des tests en résolvant pour nous de nombreuses problématiques.
-L'outillage d'[Ember][ember] en matières de tests s'appuie sur le framework [Qunit](http://qunitjs.com/) qu'il enrichit avec de nombreux *helpers*.
+L'outillage d'[Ember][ember] en matières de tests s'appuie sur le framework [Qunit](https://qunitjs.com/) qu'il enrichit avec de nombreux *helpers*.
 
 Au sein d'une application [Ember][ember], les tests prennent place dans le répertoire ``tests`` et peuvent être lancés via la commande
 
@@ -66,7 +66,7 @@ Ces opérations sont grandement facilitées par les *helpers* proposés par [Emb
 * de gérer les aspects asynchrones : ``andThen()``
 * d'accéder à l'état de l'application : ``find()``, ``currentRouteName()``
 
-L'utilisation de ces fonction est rendu possible par l'utilisation du *helper* [Ember][ember] ``moduleForAcceptance`` en lieu et place d'un module standard [Qunit](http://qunitjs.com/) :
+L'utilisation de ces fonction est rendu possible par l'utilisation du *helper* [Ember][ember] ``moduleForAcceptance`` en lieu et place d'un module standard [Qunit](https://qunitjs.com/) :
 
 ```javascript
 import { module } from 'qunit';
@@ -124,7 +124,7 @@ test('should correctly compute filteredComics on filter update', function(assert
 
 [Ember][ember] apporte également son aide ici, notamment via la function ``this.owner.lookup(args)`` qui permet de récupérer une instance d'un élément que l'on souhaite tester parfaitement initialisée.
 Ici le contrôleur ``comics``.
-Ces tâches d'initialisation et de destruction sont prises en charge notamment par le module standard [Qunit](http://qunitjs.com/) :
+Ces tâches d'initialisation et de destruction sont prises en charge notamment par le module standard [Qunit](https://qunitjs.com/) :
 
 ```javascript
 import { module, test } from 'qunit';
@@ -282,7 +282,7 @@ Nous allons les adapter pour le faire passer de nouveau (sauf les tests d'accept
   {% endcapture %}{{ m | markdownify }}
 </div>
 
-[ember]: http://emberjs.com/
+[ember]: https://emberjs.com/
 [ember-data]: https://guides.emberjs.com/v3.12.0/models/
-[ember-mirage]: http://www.ember-cli-mirage.com/
+[ember-mirage]: https://www.ember-cli-mirage.com/
 [json-server]: https://github.com/typicode/json-server

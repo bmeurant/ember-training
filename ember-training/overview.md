@@ -1,8 +1,8 @@
 ---
 layout: ember-training
 title: Formation Ember - Principes généraux
-permalink:  overview/
-prev: index
+permalink:  /overview/
+prev: /
 next: underlyings
 description: formation / tutoriel emberjs - Principes généraux & fondamentaux ember
 ---
@@ -64,7 +64,7 @@ Outre l'apport en termes de lisibilité, l'ambition est - à court terme - de pe
 
 ## Application
 
-La figure suivante, extraite de la [Documentation officielle](http://guides.emberjs.com/v3.4.0/getting-started/core-concepts/), montre une vue générale du fonctionnement d'une application [Ember][ember] et des différents objets impliqués :
+La figure suivante, extraite de la [Documentation officielle](https://guides.emberjs.com/v3.4.0/getting-started/core-concepts/), montre une vue générale du fonctionnement d'une application [Ember][ember] et des différents objets impliqués :
 
 ![Application Ember](https://guides.emberjs.com/images/ember-core-concepts/ember-core-concepts.png)
 
@@ -115,7 +115,7 @@ export default Route.extend({
 ## Templates
 
 Un template est un fragment de code HTML permettant, via des expressions, d'afficher les données du modèle associé.
-Les templates d'[Ember][ember] sont des templates [Handlebars](http://handlebarsjs.com/).
+Les templates d'[Ember][ember] sont des templates [Handlebars](https://handlebarsjs.com/).
 Les expressions Handlebars sont délimitées par `{{` et `}}`.
 
 L'exemple suivant permet d'afficher le titre d'une app composé d'un prénom et d'un nom pour peu que l'on ait passé au template un modèle contenant les deux propriétés `firstname` et `lastname`.
@@ -124,7 +124,7 @@ L'exemple suivant permet d'afficher le titre d'une app composé d'un prénom et 
 <h1>{{firstname}} {{lastname}} Library</h1>
 ```
 
-[Handlebars](http://handlebarsjs.com/) vient avec de nombreux outils (helpers) permettant de dynamiser nos templates : `{{#if isActive}} ... {{/if}}`, `{{#each users}} ... {{/each}}`, etc.
+[Handlebars](https://handlebarsjs.com/) vient avec de nombreux outils (helpers) permettant de dynamiser nos templates : `{{#if isActive}} ... {{/if}}`, `{{#each users}} ... {{/each}}`, etc.
 
 Dans [Ember][ember], les templates peuvent contenir un élément très important : un `{{outlet}}`.
 Cet outlet définit un emplacement pour un autre template permettant ainsi de multiples imbrications à mesure que les routes de l'application sont activées.
@@ -166,7 +166,7 @@ export default DS.Model.extend({
 ```
 
 Cependant, l'ensemble des mécanismes décrits plus bas (les *bindings* notamment) peuvent parfaitement fonctionner en s'appuyant directement sur le modèle objet d'ember et la 
-classe ``Ember.Object`` [en détail](http://eviltrout.com/2013/03/23/ember-without-data.html).
+classe ``Ember.Object`` [en détail](https://eviltrout.com/2013/03/23/ember-without-data.html).
 
 -> [doc officielle](https://guides.emberjs.com/v3.12.0/models/).
 
@@ -256,13 +256,13 @@ C'est absolument indispensable lorsqu'on développe en Ember.
 C'est aussi et surtout **un vrai framework avec un vrai parti pris et des vrais choix structurants.**
 
 Il est résolument tourné vers le web et les URLs.
-Ses créateurs sont également ceux de son moteur de templates [Handlebars](http://handlebarsjs.com/) et sont très impliqués dans diverses initiatives autour de la standardisation et de l'évolution du web.
-Pour n'en citer que deux : [JSON API](http://jsonapi.org/) et [Web Components](https://gist.github.com/wycats/9144666b0c606d1838be), notamment au travers de son moteur de rendu [Glimmer](https://glimmerjs.com).
+Ses créateurs sont également ceux de son moteur de templates [Handlebars](https://handlebarsjs.com/) et sont très impliqués dans diverses initiatives autour de la standardisation et de l'évolution du web.
+Pour n'en citer que deux : [JSON API](https://jsonapi.org/) et [Web Components](https://gist.github.com/wycats/9144666b0c606d1838be), notamment au travers de son moteur de rendu [Glimmer](https://glimmerjs.com).
 
-Ils embrassent très rapidement les nouveaux standards tels que [ES6 Harmony](https://tc39.github.io/ecma262/) à l'image des travaux effectués autour d'[ember-cli](http://www.ember-cli.com/).
+Ils embrassent très rapidement les nouveaux standards tels que [ES6 Harmony](https://tc39.github.io/ecma262/) à l'image des travaux effectués autour d'[ember-cli](https://www.ember-cli.com/).
 
 Enfin, contrairement aux *a priori*, la courbe d'apprentissage d'[Ember][ember] est progressive et il est très simple à prendre en main une fois les concepts de base appréhendés.
 
 {% endraw %}
 
-[ember]: http://emberjs.com
+[ember]: https://emberjs.com

@@ -324,7 +324,7 @@ Lorsque l'on déclare une action, il est également possible de préciser explic
 
 * Les éléments html standards peuvent manipuler tout type d'évènement natif.
 * Les {{action ... on ... }} peuvent gérer les évènements.
-* Les évènements gérés par le *helper*``{{input}}`` sont listés dans la [documentation](http://api.emberjs.com/ember/3.12/classes/Ember.Templates.helpers/methods/action?anchor=action).
+* Les évènements gérés par le *helper*``{{input}}`` sont listés dans la [documentation](https://api.emberjs.com/ember/3.12/classes/Ember.Templates.helpers/methods/action?anchor=action).
 
 On remarque au passage, concernant l'utilisation du *helper* ``{{input}}``, l'utilisation d'une **sous-expression** [Handlebars][handlebars] via la notation ``{{input ... (action ...)}}``.
 Cette notation permet l'imbrication d'expressions au sein des *helpers*.
@@ -802,6 +802,6 @@ L'utilisation de [propriétés calculées](../underlyings/#propri%C3%A9t%C3%A9s-
   {% endcapture %}{{ m | markdownify }}
 </div>
  
-[handlebars]: http://handlebarsjs.com/
-[ember-cli]: http://www.ember-cli.com/
-[ember]: http://emberjs.com/
+[handlebars]: https://handlebarsjs.com/
+[ember-cli]: https://www.ember-cli.com/
+[ember]: https://emberjs.com/
