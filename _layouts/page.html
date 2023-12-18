@@ -8,6 +8,12 @@ layout: simple
         {% if page.home == null %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
     </header>
 
+    <div class="alert-box alert radius">
+        <span>Attention!!!</span>
+        Cette formation n'est plus maintenue depuis ember 3.12 et ne correspond pas aux dernières évolutions du framework.
+        Je vous invite à vous reporter sur les <a href="https://guides.emberjs.com">guides officiels d'ember</a> pour des tutoriaux complets d'introduction.
+    </div>
+
     <article class="page-content">
         <div class="page-main">
             {{ content }}
